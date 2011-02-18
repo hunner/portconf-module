@@ -1,0 +1,10 @@
+portconf
+
+Normally using a package with 'provider => portupgrade' would use the default
+compile-time options. Traditionally the way to manage these options is to push
+out a pkgtools.conf via puppet, but this is complex, clunky, and doesn't cover
+all the options.
+
+The portconf package can be used on FreeBSD to set compile-time options for
+running `make` directly in the ports directory, `portupgrade` initial compiles,
+`portupgrade` upgrade compiles, and `portupgrade` dependency compiles.
